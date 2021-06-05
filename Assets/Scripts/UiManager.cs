@@ -27,9 +27,9 @@ public class UiManager : MonoBehaviour
     {
 
     }
-    
-    
-    
+
+   
+
     public void Restrar()
     {
         ScoreScript.score = 0;
@@ -43,6 +43,11 @@ public class UiManager : MonoBehaviour
         
     }
     public void NewGame()
+    {
+        SceneManager.LoadScene(3);
+
+    }
+    public void START()
     {
         SceneManager.LoadScene(1);
         

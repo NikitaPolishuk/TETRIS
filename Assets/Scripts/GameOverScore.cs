@@ -7,13 +7,13 @@ public class GameOverScore : MonoBehaviour
 {
     public Text ScoreText;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         ScoreText.text = "Score:" + ScoreScript.score.ToString();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         

@@ -56,12 +56,18 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DesignScripts\MainMenuDesign.cs" />
     <Compile Include="Assets\Scripts\PauseScript.cs" />
+    <Compile Include="Assets\Scripts\GameOverScore.cs" />
+    <Compile Include="Assets\Scripts\BlockManager.cs" />
     <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Scripts\UiManager.cs" />
     <Compile Include="Assets\Scripts\BlockLogic.cs" />
-    <Compile Include="Assets\Scripts\ScoreScript.cs" />
-    <Compile Include="Assets\Scripts\GameOverScore.cs" />
+    <Compile Include="Assets\DesignScripts\GameDesign.cs" />
+    <Compile Include="Assets\DesignScripts\BlockData.cs" />
+    <Compile Include="Assets\DesignScripts\GameOverDesign.cs" />
+    <Compile Include="Assets\DesignScripts\SelectionDesign.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

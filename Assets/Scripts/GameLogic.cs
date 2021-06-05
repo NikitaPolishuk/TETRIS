@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class GameLogic : MonoBehaviour
 {
@@ -11,30 +12,39 @@ public class GameLogic : MonoBehaviour
     public static float quickDropTime = 0.05f;
 
     public static int width = 15, height = 40;
-    public GameObject[] blocks;
+    public List<GameObject> blocks;
     public Transform[,] grid = new Transform[width, height];
-    
+
     public GameObject SpeedText;
-    
 
 
-  
+    private void Awake()
+    {
+        blocks = BlockManager.instance.blocks;
+    }
+
     void Start()
     {
+
+
         SpawnBlock();
 
         
     }
+    void Update()
+    {
 
+    }
 
+    
     public void ClearLines()
     {
 
-        for (int y= 0; y < height; y++)
+        for (int y = 0; y < height; y++)
         {
             if (IsLineComplete(y))
             {
-                
+
                 DestroyLine(y);
                 MoveLines(y);
 
@@ -84,16 +94,16 @@ public class GameLogic : MonoBehaviour
     }
 
 
-    
+
     void MoveLines(int y)
     {
         for (int i = y; i < height - 1; i++)
-        
+
         {
             for (int x = 0; x < width; x++)
             {
                 if (grid[x, i + 1] != null)
-                
+
                 {
                     grid[x, i] = grid[x, i + 1];
                     grid[x, i].gameObject.transform.position -= new Vector3(0, 1, 0);
@@ -109,15 +119,15 @@ public class GameLogic : MonoBehaviour
         {
             Destroy(grid[x, y].gameObject);
             grid[x, y] = null;
-            
+
         }
     }
 
     bool IsLineComplete(int y)
     {
-        for (int x=0; x< width; x++)
+        for (int x = 0; x < width; x++)
         {
-            if(grid[x,y]==null)
+            if (grid[x, y] == null)
             {
                 return false;
             }
@@ -125,16 +135,20 @@ public class GameLogic : MonoBehaviour
         return true;
     }
 
-    
-   
+
+
 
     public void SpawnBlock()
     {
+
+
         float guess = Random.Range(0, 1f);
-        guess *= blocks.Length;
+        guess *= blocks.Count;
         Instantiate(blocks[Mathf.FloorToInt(guess)]);
-        
+
+
+
     }
 
-  
+
 }

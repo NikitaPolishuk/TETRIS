@@ -1,16 +1,23 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BlockData
     - BlockLogic
+    - BlockManager
+    - GameDesign
     - GameLogic
+    - GameOverDesign
     - GameOverScore
+    - MainMenuDesign
     - PauseScript
     - ScoreScript
+    - SelectionDesign
     - UiManager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -38,6 +45,65 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
+    Assets/Scenes/BlockSelection.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1536}
+    - Class: 114
+      Script: {instanceID: 2124}
+    - Class: 114
+      Script: {instanceID: 2496}
+    - Class: 114
+      Script: {instanceID: 2642}
+    - Class: 114
+      Script: {instanceID: 2814}
+    - Class: 114
+      Script: {instanceID: 3022}
+    - Class: 114
+      Script: {instanceID: 3026}
+    - Class: 114
+      Script: {instanceID: 3130}
+    - Class: 114
+      Script: {instanceID: 3242}
+    - Class: 114
+      Script: {instanceID: 3512}
+    - Class: 114
+      Script: {instanceID: 5020}
+    - Class: 114
+      Script: {instanceID: 21056}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/GameOver.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -58,23 +124,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 2122}
+      Script: {instanceID: 2124}
     - Class: 114
-      Script: {instanceID: 2494}
+      Script: {instanceID: 2496}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3022}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3130}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3242}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3470}
+    - Class: 114
+      Script: {instanceID: 5020}
+    - Class: 114
+      Script: {instanceID: 17362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -113,29 +183,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 2122}
+      Script: {instanceID: 2124}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2494}
+      Script: {instanceID: 2496}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3022}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3130}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3242}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3470}
     - Class: 114
-      Script: {instanceID: 3508}
+      Script: {instanceID: 3512}
+    - Class: 114
+      Script: {instanceID: 3764}
+    - Class: 114
+      Script: {instanceID: 5020}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,21 +248,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 2122}
+      Script: {instanceID: 1818}
     - Class: 114
-      Script: {instanceID: 2494}
+      Script: {instanceID: 2124}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2496}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 3022}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3026}
     - Class: 114
-      Script: {instanceID: 3238}
+      Script: {instanceID: 3130}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3242}
+    - Class: 114
+      Script: {instanceID: 3470}
+    - Class: 114
+      Script: {instanceID: 5020}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -296,6 +374,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 93e0791a25d70766f58b0a6eca10edd3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuDesign
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -442,6 +526,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: a3b2c7b6c1616ac7b144bb91e8e4ce86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlockManager
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -544,7 +634,7 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: b535e6ff76b5e9b90775a00579220a7e
+      Hash: 222aa19c26e2b4b00717580bd2c38c05
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BlockLogic
@@ -584,6 +674,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: f06976df8445751fd76ecadaf9a2b06d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameDesign
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -748,6 +844,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 43e1a7656ea0685dac8d3ef2f0e67b3c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlockData
+  - hash:
+      serializedVersion: 2
       Hash: abf1930d8126d0b2e00e9449129a0190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -758,9 +860,22 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 74da9b2ab264ed6eb90aaa5c96d26aba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOverDesign
+  - hash:
+      serializedVersion: 2
+      Hash: 757211b0dc44f5e0e888c6b6de2033a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectionDesign
   platform: 13
   scenePathNames:
   - Assets/Scenes/menu.unity
   - Assets/Scenes/Main.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: D:/tet/TETRIS 3.5.apk
+  - Assets/Scenes/BlockSelection.unity
+  playerPath: D:/tet/TETRIS2077.apk

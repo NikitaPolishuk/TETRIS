@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 8af791f0541feed47bafb026f352ec92
+  - enabled: 1
+    path: Assets/Scenes/BlockSelection.unity
+    guid: b8a8e59596e482744b4540b8edda9720
   m_configObjects: {}

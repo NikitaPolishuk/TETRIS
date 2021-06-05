@@ -6,7 +6,7 @@ public class PauseScript : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    BlockLogic blockLogic;
+    
 
     
 

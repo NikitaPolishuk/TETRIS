@@ -8,8 +8,8 @@ using UnityEngine.UI;
 
 public class BlockLogic : MonoBehaviour
 {
-    public bool movable = true;
-    public bool moved = false;
+    bool movable = true;
+    bool moved = false;
     float timer = 0f;
     public GameObject rig;
     GameLogic gameLogic;
@@ -104,7 +104,7 @@ public class BlockLogic : MonoBehaviour
 
         gameLogic.ClearLines();
 
-        //CheckUserInput();
+        
 
 
 
